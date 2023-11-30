@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1.c</title>
+</head>
+<body>
+    <script>
+        class Movie
+{
+    constructor (title,studio,rating)
+    {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+     getPG (str)
+     {
+       
+       let result = str.filter( (el)=>
+       el.rating == "PG" );
+       return result;
+       
+     }
+     
+}
+
+const mo1 = new Movie("kanguva","studio green","PG15");
+const mo2 = new Movie("vikram","rkfc","PG");
+const mo3 = new Movie("Jai Bhim","2D","PG");
+
+let str = [];
+str.push(mo1,mo2,mo3);
+
+console.log (mo1.getPG(str));
+
+    </script>
+</body>
+</html>

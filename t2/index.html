@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+
+        class Circle
+        {
+            constructor(radius,color)
+            {
+                this.radius = radius;
+                this.color = color;
+            }
+            getRadius(){
+               return("the radius is : " +this.radius);
+            }
+            setRadius(rad){
+                this.radius = rad;
+            }
+            getColor(){
+                return("the color is: " +this.color);
+            }
+            setColor(col){
+                this.color = col;
+            }
+            toString(){
+                return `Circle [radius = ${this.radius} , color = ${this.color}]`;
+            }
+            getArea(){
+                let area = (Math.PI * Math.pow(this.radius,2));
+                return area;
+            }
+            getCircumference(){
+                let circumference = (2* Math.PI * this.radius);
+                return circumference;
+            }
+        }
+
+        const c1 = new Circle(5,"Green");
+        
+        c1.setRadius(8);
+        c1.setColor("White");
+
+        console.log(c1.toString());
+
+        console.log(c1.getRadius());
+        console.log(c1.getColor());
+        
+        console.log(c1.getArea());
+        console.log(c1.getCircumference());
+
+    </script>
+</body>
+</html>
